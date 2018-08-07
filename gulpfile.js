@@ -38,13 +38,13 @@ gulp.task('refresh-summary', function(cb) {
 });
 
 gulp.task('generate-book', function(cb) {
-  gulpGitbook.pdf(".", {outputDir: "./book.pdf"}, function(err) {
+  gulpGitbook.pdf(".", {outputDir: "./downloads/book.pdf"}, function(err) {
     if(err) { cb(err); return; }
 
-    gulpGitbook.epub(".", {outputDir: "./book.epub"}, function(err) {
+    gulpGitbook.epub(".", {outputDir: "./downloads/book.epub"}, function(err) {
       if(err) { cb(err); return; }
 
-      gulpGitbook.mobi(".", {outputDir: "./book.mobi"}, cb);
+      gulpGitbook.mobi(".", {outputDir: "./downloads/book.mobi"}, cb);
     });
   });
 });

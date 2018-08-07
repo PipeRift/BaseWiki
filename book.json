@@ -17,7 +17,12 @@
         "custom-favicon",
         "copy-code-button",
         "styles-less",
-        "links"
+        "links",
+        "prism",
+        "-highlight",
+        "collapsible-chapters",
+        "hide-published-with",
+        "hints"
     ],
     "pluginsConfig": {
         "favicon": "./assets/favicon.ico",
