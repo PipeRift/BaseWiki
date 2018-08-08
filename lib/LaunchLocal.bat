@@ -1,5 +1,5 @@
 @echo off
 cd ..
 :begin
-gulp serve
+call gulp serve
 goto :begin

@@ -27,6 +27,6 @@
     "start": "node ./node_modules/gulp-cli/bin/gulp.js serve",
     "build": "node ./node_modules/gulp-cli/bin/gulp.js build",
     "build-light": "node ./node_modules/gulp-cli/bin/gulp.js build-light",
-    "publish": "npm run build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:<username>/<repo> gh-pages --force"
+    "publish": "npm run build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git rm *.md -f && git commit -am 'Update docs' && git push git@github.com:<username>/<repo> gh-pages --force"
   }
 }
