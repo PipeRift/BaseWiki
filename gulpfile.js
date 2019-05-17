@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var exec = require("child_process").exec;
 var runSequence = require('run-sequence');
+var del = require('del');
 var gulpGitbook = require('gulp-gitbook');
+var exec = require('child_process').exec;
 
 gulp.task('default', function() {
   // place code for your default task here
@@ -20,7 +22,7 @@ gulp.task('build-light', function(cb) {
   runSequence(
     'refresh-summary',
   function() {
-    gulpGitbook(".", cb);
+    gulpGitbook.website(".", cb);
   });
 });
 
